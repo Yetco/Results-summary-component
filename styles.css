@@ -1,0 +1,295 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+  margin: 0;
+}
+
+/* .container {
+  width: 100%;
+  /* max-width: 1440px; *
+  margin: 0 auto;
+  padding: 0;
+  /* padding: 0 1rem; *
+} */
+
+.one {
+  background: linear-gradient(
+    to bottom,
+    hsl(251, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.card1 {
+  color: hsl(0, 0%, 100%);
+  height: 380px;
+  text-align: center;
+  margin: 0 2rem;
+  padding: 2rem 0;
+  /* display: grid; */
+  /* justify-content: space-between; */
+}
+
+h1 {
+  color: hsl(241, 100%, 89%);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lavender {
+  color: hsl(241, 100%, 89%);
+}
+
+.card1 p:nth-child(3) {
+  margin-top: 1rem;
+}
+
+.card1 p:nth-last-child(1) {
+  color: hsl(241, 100%, 89%);
+  margin-top: 0.5rem;
+}
+
+.bubble {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  /* background-color: white; */
+  margin: 0 auto;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bubble .sevsix {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+.bubble .lavender {
+  margin-top: 6rem;
+}
+
+.bubble::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 0 0;
+  border-color: transparent transparent transparent transparent;
+}
+
+.card2 {
+  display: grid;
+  margin: 0 2rem;
+  padding: 1rem 0;
+  /* box-shadow: 0px 0px 15px 5px hsl(241, 81%, 54%, 0.2); */
+}
+
+h2 {
+  color: hsl(224, 30%, 27%);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 1rem;
+  border-radius: 7px;
+  border: none;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+button span {
+  display: flex;
+}
+
+button .icon-space {
+  margin-left: 0.8rem;
+}
+
+img {
+  font-size: 3.2rem;
+  vertical-align: text-bottom;
+}
+
+.right {
+  margin-left: auto;
+  margin-right: 0.4rem;
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+}
+
+.oh {
+  color: hsl(294, 8%, 76%);
+  font-weight: 800;
+}
+
+.btn-red {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.btn-red span {
+  color: hsl(0, 100%, 67%);
+}
+
+.btn-orange {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.btn-orange span {
+  color: hsl(39, 100%, 56%);
+}
+
+.btn-green {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.btn-green span {
+  color: hsl(166, 100%, 37%);
+}
+
+.btn-blue {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.btn-blue span {
+  color: hsl(234, 85%, 45%);
+}
+
+.btn-dark-blue {
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 2rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.btn-dark-blue span {
+  margin: 0 auto;
+}
+
+.btn-dark-blue:hover {
+  background-color: hsl(241, 81%, 54%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.attribution a {
+  color: hsl(158, 36%, 37%);
+}
+
+#name {
+  color: red;
+}
+
+@media (min-width: 800px) {
+  main {
+    max-width: 700px;
+
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    min-height: 100vh;
+  }
+
+  .one {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+
+  .card1 {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: -1.5rem;
+  }
+
+  .bubble {
+    width: 200px;
+    height: 200px;
+    margin-top: -1rem;
+  }
+
+  .bubble .sevsix {
+    margin-top: 2rem;
+  }
+
+  .bubble span {
+    font-size: 4.5rem;
+  }
+
+  .bubble .lavender {
+    margin-top: -0.7rem;
+  }
+
+  #great {
+    font-size: 2.2rem;
+    margin-top: -0.5rem;
+  }
+
+  .card1 p:nth-child(4) {
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
+  }
+
+  .card2 {
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 10px 10px 50px hsl(241, 81%, 54%, 0.2);
+    padding: 2rem 2rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .container {
+    width: 80%;
+    /* max-width: 1440px; */
+    margin: 0 auto;
+    padding: 0;
+    /* padding: 0 1rem; */
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  button {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+  }
+}
